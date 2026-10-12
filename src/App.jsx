@@ -9,7 +9,7 @@ import CasePage from "./pages/CasePage";
 
 function App() {
   return (
-    <Router basename="/portfolio-v2">
+    <Router>
       <ScrollToTop />
       <Navbar />
       <Routes>
