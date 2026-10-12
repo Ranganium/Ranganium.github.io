@@ -1,0 +1,22 @@
+name: Deploy til Simply.com
+
+on:
+  push:
+    branches:
+      - main # Skifter automatisk når du pusher til 'main' branch
+
+jobs:
+  web-deploy:
+    name: Upload filer via FTP
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hent nyeste kode
+        uses: actions/checkout@v4
+
+      - name: Synkroniser filer til Simply
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: public_html/ # Sørg for at ramme public_html mappen
