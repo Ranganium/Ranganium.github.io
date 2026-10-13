@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
 import cases from "../data/cases.json";
 import dubbleBraidPattern from "../assets/dubble-braid-pattern.svg";
 import styles from "./CasePage.module.css";
@@ -116,18 +117,22 @@ export default function CasePage() {
                 >
                   <div className={styles.contributionText}>
                     <h3>{item.heading}</h3>
-                    <p>{item.text}</p>
+                    <p>
+                      <ReactMarkdown>{item.text}</ReactMarkdown>
+                    </p>
                   </div>
-                  <div className={styles.contributionImage}>
-                    <img
-                      src={
-                        resolveProjectImage
-                          ? resolveProjectImage(item.image)
-                          : item.image
-                      }
-                      alt={item.heading}
-                    />
-                  </div>
+                  {item?.image ? (
+                    <div className={styles.contributionImage}>
+                      <img
+                        src={
+                          resolveProjectImage
+                            ? resolveProjectImage(item.image)
+                            : item.image
+                        }
+                        alt={item.heading || ""}
+                      />
+                    </div>
+                  ) : null}
                 </div>
               );
             })}

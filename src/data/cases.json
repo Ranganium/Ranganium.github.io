@@ -81,7 +81,7 @@
     },
     "projectLinks": {
       "prototype": "https://www.figma.com/proto/RRipHKR62XR6xo6JdFIFsF/CX-eksamen---design?node-id=2-2&t=Zj7KqJyzokjmOb2f-1",
-      "website": "https://cillemdu.github.io/customer-experience-design-exam/.dk",
+      "website": "https://cillemdu.github.io/customer-experience-design-exam/",
       "repository": "https://github.com/CilleMDU/customer-experience-design-exam"
     },
     "contributionTags": ["UX/UI Design", "Research", "Frontend Development"],
@@ -178,7 +178,7 @@
     "projectLogo": "../assets/logos/mellemrum.png",
     "concept": [
       "For denne 3. semester opgave har jeg videreudviklet og optimeret Mellemrum, som er en fiktiv kunde, som har som fokus at gøre det nemt og overskueligt at finde lokale arrangementer og workshops i Aarhus.",
-      "Vi fik derfra til opgave at analysere hjemmesiden og lave et Audit for at finde frem til problemer, konsekvenser og mulige løsninger, hvor vi derfra skulle prioritere, hvilke der skulle handles på."
+      "Vi fik derfra til opgave at analysere hjemmesiden og finde frem til det fejl og mangler, som skulle ændres"
     ],
     "technologiesUsed": [
       "Figma",
@@ -213,14 +213,14 @@
     ],
     "contributions": [
       {
-        "heading": "Research of conventions",
-        "text": "Through a thorough competitor analysis of 10 similar platforms during the discover phase, we identified market standards and pinpointed areas where we could stand out.",
-        "image": "/mer-end-toast-images/research.webp"
+        "heading": "Undersøgelse",
+        "text": "Before making any changes to the website, I first walked through the existing user experience. I tested the core user flow—from finding an event and viewing its details, to signing up and checking existing registrations. After identifying the main surface-level UX issues on [mellemrum](https://cederdorff.com/mellemrum/), I dived into the codebase to pinpoint technical improvements. I compiled everything into an [audit](https://docs.google.com/document/d/1u0zaH6SHVuLxZm12Ho-dUiabJRMWlwzboKWH-qSA6kU/edit?usp=sharing) documenting the identified problems and proposed solutions.",
+        "image": "/mellemrum-images/tilmeldinger.png"
       },
       {
-        "heading": "Functions",
-        "text": "Our insights showed that Mer' end Toast would create the greatest value by integrating into as many parts of the users' cooking workflow as possible. Therefore, we prioritized two core features: price comparison between recipes with updates based on weekly promotional flyers, and a shopping list.",
-        "image": "/mer-end-toast-images/functions.webp"
+        "heading": "",
+        "text": "My [Audit](https://docs.google.com/document/d/1u0zaH6SHVuLxZm12Ho-dUiabJRMWlwzboKWH-qSA6kU/edit?usp=sharing) details the full scope of issues and areas for improvement. I organized my findings under descriptive headings and prioritized each task based on severity. For example, navigating to an event was restricted to clicking a 'Read more' button. Since standard web conventions allow users to click directly on the image, I updated the layout accordingly. For each observation, I supported the issue with UX theory and applied established industry standards to design an optimal solution.",
+        "image": "/mellemrum-images/examination.png"
       },
       {
         "heading": "Technical challenge",

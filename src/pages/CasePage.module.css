@@ -171,6 +171,11 @@
   width: 100%;
 }
 
+.contributionImage img {
+  max-height: 610px;
+  border-radius: 0.5rem;
+}
+
 .reflectionsSection {
   display: flex;
   padding: 10rem 0;
