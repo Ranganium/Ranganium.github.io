@@ -23,11 +23,11 @@ function Navbar() {
           rel="noreferrer"
           className={styles.link}
         >
-          Om mig
+          About
         </a>
         <div className={styles.contact}>
           <HashLink smooth className={styles.link} to="/#footer">
-            Kontakt
+            Contact
           </HashLink>
         </div>
       </div>
