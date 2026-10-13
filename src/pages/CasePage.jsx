@@ -34,6 +34,12 @@ export default function CasePage() {
     return <h2>Project was not found!</h2>;
   }
 
+  const links = project?.projectLinks;
+
+  if (!links || (!links.prototype && !links.website && !links.repository)) {
+    return null;
+  }
+
   return (
     <div className={styles.casePage}>
       <div className={styles.casePageContent}>
@@ -69,18 +75,21 @@ export default function CasePage() {
         <div className={styles.projectLinksSection}>
           <h2>Explore the project</h2>
           <div className={styles.linkContainer}>
-            <a className={styles.linkBtn} href={project.projectLinks.prototype}>
-              Protoype
-            </a>
-            <a className={styles.linkBtn} href={project.projectLinks.website}>
-              Website
-            </a>
-            <a
-              className={styles.linkBtn}
-              href={project.projectLinks.repository}
-            >
-              Repository
-            </a>
+            {links.prototype && (
+              <a className={styles.linkBtn} href={links.prototype}>
+                Prototype
+              </a>
+            )}
+            {links.website && (
+              <a className={styles.linkBtn} href={links.website}>
+                Website
+              </a>
+            )}
+            {links.repository && (
+              <a className={styles.linkBtn} href={links.repository}>
+                Repository
+              </a>
+            )}
           </div>
         </div>
         <img src={dubbleBraidPattern} areal-hidden="true" />
