@@ -1,5 +1,5 @@
 // Mønster
-import aboutPattern from "../assets/other-icons/about-pattern.svg";
+import dubbleBraidPattern from "../assets/dubble-braid-pattern.svg";
 // billede
 import JeppeBillede from "../assets/jeppe-billede.jpg";
 // Logoer og ikoner
@@ -28,99 +28,15 @@ import styles from "./AboutMePage.module.css";
 function AboutMePage() {
   return (
     <div className={styles.aboutPage}>
-      <section className={styles.aboutHero}>
-        <img src={aboutPattern} aria-hidden="true" />
-        <h1>hvem er jeppe</h1>
-      </section>
+      <img src={dubbleBraidPattern} alt="" aria-hidden="true" />
+      <h1>Who am I</h1>
+      <img src={JeppeBillede} alt="Billede af mig" />
+
       <div className={styles.aboutGrid}>
         <div className={styles.aboutColumn}>
-          <div className={styles.aboutBio}>
-            <p>Hej!</p>
-            <p>
-              Mit navn er Jeppe. Jeg kommer fra en lille by i Vestjylland kaldet
-              Ådum.
-            </p>
-            <p>
-              Jeg brænder for at lave digitale, brugercentrerede løsninger med
-              brug af intuitivt design og funktionel kodning.
-            </p>
-            <p>
-              På det seneste har jeg også fået en begejstring for databaser, som
-              jeg gerne vil lære endnu mere om.
-            </p>
-            <p>
-              Min personlighedstype er "Beskytter" (ISFJ-T). Som person er jeg
-              empatisk og håber andre har det godt.
-            </p>
-          </div>
-          <div className={styles.aboutTestimonial}>
-            <h3>Testimonial</h3>
-            <p>
-              ”Jeppe har en systematisk tilgang til opgaver, og det har været en
-              stor hjælp i forhold til effektiviseringen af vores produktramme.
-            </p>
-            <p>
-              Jeppe er ansvarlig, arbejdsom, loyal og en rigtig god kollega. Vi
-              kan derfor give Jeppe Kristensen vores bedste anbefalinger”
-            </p>
-            <p>
-              <strong>Erik Hein</strong>, Soldaterhjemsleder
-            </p>
-          </div>
-        </div>
-
-        <div className={styles.aboutColumn}>
-          <div className={styles.imageWrapper}>
-            <img src={JeppeBillede} alt="billede af Jeppe" />
-          </div>
-
-          <div className={styles.toolBox}>
-            <h3>Værktøjskasse</h3>
-            <div className={styles.toolBoxStuff}>
-              <div className={styles.aboutIcons}>
-                <img src={figmaLogo} alt="Figma" />
-                <img src={illustratorLogo} alt="Adobe Illustrator" />
-              </div>
-              <div className={styles.orangeLine}></div>
-              <span>Design & prototyping</span>
-            </div>
-            <div className={styles.toolBoxStuff}>
-              <div className={styles.aboutIcons}>
-                <img src={cssLogo} alt="CSS" />
-                <img src={htmlLogo} alt="HTML" />
-                <img src={reactLogo} alt="React" />
-                <img src={javascriptLogo} alt="JavaScript" />
-              </div>
-              <div className={styles.orangeLine}></div>
-              <span>Frontendudvikling</span>
-            </div>
-            <div className={styles.toolBoxStuff}>
-              <div className={styles.aboutIcons}>
-                <img src={githubLogo} alt="GitHub" />
-                <img src={gitLogo} alt="git" />
-              </div>
-              <div className={styles.orangeLine}></div>
-              <span>Samarbejde & versionsstyring</span>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.aboutColumn}>
-          <div className={styles.interestsBox}>
-            <h3>Interesser</h3>
-            <div className={styles.interests}>
-              <ImgPoint img={trainingIcon} point="Træning" />
-              <ImgPoint img={gameIcon} point="Spille masser af computer" />
-              <ImgPoint img={bakingIcon} point="Bagning & generel madlavning" />
-              <ImgPoint
-                img={questioningIcon}
-                point="Finde ud af hvorfor ting fungerer"
-              />
-            </div>
-          </div>
-
           <div className={styles.experienceBox}>
             <h3>Erfaring</h3>
+
             <ExperienceCard
               icon={educationIcon}
               title="HTX-linje Kommunikation & IT"
@@ -130,33 +46,36 @@ function AboutMePage() {
                 "Jeg havde Digital Design & Udvikling som teknikfag. Her skulle man lave spil i Unity. I mit team fungerede jeg hovedsageligt som designer af de forskellige dele af spillet.",
               ]}
             />
+
             <ExperienceCard
               icon={workIcon}
               title="Butiksmedarbejder i købmand"
-              competencies={["Ansver", "Kundeservice", "oplæring"]}
+              competencies={["Ansvar", "Kundeservice", "Oplæring"]}
               description={[
                 "Jeg arbejdede 2,5 år ved Ådum købmand (2022-2024), hvor jeg virkelig lærte ansvar og glæden ved at glæde andre.",
-                "Kundeservice var top prioritet og jeg har haft mange snakke med forskellige slags kunder lige fra fulde svajende mænd til virkelig alene gamle folk uden andre.",
+                "Kundeservice var topprioritet, og jeg har haft mange snakke med forskellige slags kunder – lige fra berusede mænd til ældre, ensomme borgere.",
               ]}
             />
+
             <ExperienceCard
               icon={null}
               title="Volontør på KFUM soldaterhjem"
               competencies={["Samarbejde", "Selvrealisering"]}
               description={[
                 "Jeg var volontør på KFUM Soldaterhjem i Varde i 5 måneder i 2024. Min hovedsagelige rolle var at lave grillmad til soldater, som bestilte. Derudover var jeg også med ude på skydebanerne og solgte mad der, når nogen bestilte vognen.",
-                "Jeg lavede dog andet arbejde, fordi lederen troede på at man skulle lave det man var god til. Jeg var mest i opvasken, blev også sat til at lave den daglige kage og designe nye skilte dertil. Han er også kommet med en anbefaling.",
-                "Jeppe har en systematisk tilgang til opgaver, og det har været en stor hjælp i forhold til effektiviseringen af vores produktramme.",
-                "Jeppe er ansvarlig, arbejdsom, loyal og en rigtig god kollega. Vi kan derfor give Jeppe Kristensen vores bedste anbefalinger” - Erik Hein, Soldaterhjemsleder",
+                "Jeg lavede dog andet arbejde, fordi lederen troede på, at man skulle lave det, man var god til. Jeg var mest i opvasken, blev også sat til at lave den daglige kage og designe nye skilte dertil. Han er også kommet med en anbefaling:",
+                "»Jeppe har en systematisk tilgang til opgaver, og det har været en stor hjælp i forhold til effektiviseringen af vores produktramme.«",
+                "»Jeppe er ansvarlig, arbejdsom, loyal og en rigtig god kollega. Vi kan derfor give Jeppe Kristensen vores bedste anbefalinger« – Erik Hein, Soldaterhjemsleder",
               ]}
             />
+
             <ExperienceCard
               icon={europeanIcon}
-              title="Internationalt projekt/ ERASMUS+"
+              title="Internationalt projekt / ERASMUS+"
               competencies={["Kulturforståelse"]}
               description={[
                 "Vi har haft et tværkulturelt projekt med studerende fra Holland, hvor vi skulle lave en oplevelse, som skulle fremme kulturel forståelse.",
-                "Derudover har jeg været på et udvekslingsforløb med nogle elever fra Italien, hvor vi tog til Italien og oplevede deres kultur ved at bo individuelt ved deres familier.",
+                "Derudover har jeg været på et udvekslingsforløb med nogle elever fra Italien, hvor vi tog til Italien og oplevede deres kultur ved at bo individuelt hos deres familier.",
               ]}
             />
           </div>

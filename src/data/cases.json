@@ -14,11 +14,11 @@
     "platform": "mobile",
     "productImages": {
       "mobile": [
-        "/spilcafe-imgages/overview.webp",
-        "/spilcafe-imgages/location.webp",
-        "/spilcafe-imgages/filter.webp",
-        "/spilcafe-imgages/game-card.webp",
-        "/spilcafe-imgages/burger-menu.webp"
+        "/spilcafe-images/overview.webp",
+        "/spilcafe-images/location.webp",
+        "/spilcafe-images/filter.webp",
+        "/spilcafe-images/game-card.webp",
+        "/spilcafe-images/burger-menu.webp"
       ],
       "desktop": []
     },
