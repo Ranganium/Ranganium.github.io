@@ -52,7 +52,7 @@
   {
     "id": 2,
     "slug": "uniquely-her",
-    "title": "Spilcaféen",
+    "title": "Uniquely Her",
     "siteType": "Webshop",
     "projectLogo": "../assets/logos/uniquely-her-logo.webp",
     "concept": [
@@ -177,8 +177,8 @@
     "siteType": "Website",
     "projectLogo": "../assets/logos/mellemrum.png",
     "concept": [
-      "For denne 3. semester opgave har jeg videreudviklet og optimeret Mellemrum, som er en fiktiv kunde, som har som fokus at gøre det nemt og overskueligt at finde lokale arrangementer og workshops i Aarhus.",
-      "Vi fik derfra til opgave at analysere hjemmesiden og finde frem til det fejl og mangler, som skulle ændres"
+      "For this 3rd-semester project, I further developed and optimized Mellemrum—a fictional client focused on making it easy and straightforward to discover local events and workshops in Aarhus.",
+      "From there, our task was to analyze the website and identify the issues and areas for improvement that needed to be addressed."
     ],
     "technologiesUsed": [
       "Figma",
@@ -213,23 +213,80 @@
     ],
     "contributions": [
       {
-        "heading": "Undersøgelse",
-        "text": "Before making any changes to the website, I first walked through the existing user experience. I tested the core user flow—from finding an event and viewing its details, to signing up and checking existing registrations. After identifying the main surface-level UX issues on [mellemrum](https://cederdorff.com/mellemrum/), I dived into the codebase to pinpoint technical improvements. I compiled everything into an [audit](https://docs.google.com/document/d/1u0zaH6SHVuLxZm12Ho-dUiabJRMWlwzboKWH-qSA6kU/edit?usp=sharing) documenting the identified problems and proposed solutions.",
+        "heading": "Testing",
+        "text": "Before making any changes to the website, I first walked through the existing user experience. I tested the core user flow from finding an event and viewing its details, to signing up and checking existing registrations. After identifying the main surface-level UX issues on [mellemrum](https://cederdorff.com/mellemrum/), I dived into the codebase to pinpoint technical improvements like missing loading states or micro interactions. I compiled everything into an [audit](https://docs.google.com/document/d/1u0zaH6SHVuLxZm12Ho-dUiabJRMWlwzboKWH-qSA6kU/edit?usp=sharing) documenting the identified problems and proposed solutions.",
         "image": "/mellemrum-images/tilmeldinger.png"
       },
       {
-        "heading": "",
-        "text": "My [Audit](https://docs.google.com/document/d/1u0zaH6SHVuLxZm12Ho-dUiabJRMWlwzboKWH-qSA6kU/edit?usp=sharing) details the full scope of issues and areas for improvement. I organized my findings under descriptive headings and prioritized each task based on severity. For example, navigating to an event was restricted to clicking a 'Read more' button. Since standard web conventions allow users to click directly on the image, I updated the layout accordingly. For each observation, I supported the issue with UX theory and applied established industry standards to design an optimal solution.",
+        "heading": "Examination",
+        "text": "My [Audit](https://docs.google.com/document/d/1u0zaH6SHVuLxZm12Ho-dUiabJRMWlwzboKWH-qSA6kU/edit?usp=sharing) details the full scope of issues and areas for improvement. I organized my findings under descriptive headings and prioritized each task based on severity. For example, navigating to an event was restricted to clicking a 'Read more' button. Since standard web conventions allow users to click directly on the image, I updated the code accordingly. For the loading state to work, I made a try-catch logic that also helped error prevention. For each observation, I supported the issue with UX theory and applied established industry standards to design an optimal solution.",
         "image": "/mellemrum-images/examination.png"
       },
       {
-        "heading": "Technical challenge",
-        "text": "The most technical challenge was then building a well-structured database of recipes containing ingredients with units. Each ingredient would also need to include pricing and nutritional values.",
-        "image": "/mer-end-toast-images/supabase.webp"
+        "heading": "Results",
+        "text": "I managed to fix virtually all the issues I identified, but the project wasn't based solely on self-assessment. My [Audit](https://docs.google.com/document/d/1u0zaH6SHVuLxZm12Ho-dUiabJRMWlwzboKWH-qSA6kU/edit?usp=sharing) included a dedicated section outlining how each solution would be tested to verify if the issue was resolved. Based on my user testing and lighthouse, I ensured that my version of [mellemrum](https://jeppekorsgaard.com/case-1-mellemrum/) performs better in terms of usability and accessibility. Additionally, the Supabase data structure was optimized into a cleaner format, making it much easier to maintain and scale in the long run.",
+        "image": "/mellemrum-images/results.png"
+      },
+      {
+        "heading": "Value & Potential",
+        "text": "The core value delivered in this project lies in enhancing the overall user experience by applying established web conventions from comparable platforms. This directly benefits primary users looking to discover and sign up for events by reducing friction and cognitive load throughout the user journey. Secondarily, it creates business value for Mellemrum, as a more intuitive and seamless platform minimizes drop-off rates and increases successful event registrations.",
+        "image": "/mellemrum-images/click.png"
       }
     ],
-    "reflections": "I learned how to use CRUD and Supabase even better and now have a great reference for future projects. In addition, I gained more experience with Jitter and Lottie animations.",
+    "reflections": "This project provided valuable insights into code optimization and UX-driven problem-solving. Working with a structured audit proved highly effective, pushing me to combine UX theory with solutions. I wanted to make a standard log in flow, but ended up implementing a simpler alternative instead. The focus on code rather than visual design made me focus strictly on usability by preventing user frustration. As a next step, developing a dedicated Organizer View would be the ideal addition. Leveraging the existing sign-up data structure, this would complete the ecosystem by giving event creators a seamless overview.",
     "buttonColor": "#173F35",
-    "buttonSummary": "A recipe app that combines recipes, pricing, and shopping lists into one single app."
+    "buttonSummary": "Uptimizing a local event platform in code."
+  },
+  {
+    "id": 5,
+    "slug": "vuuh",
+    "title": "vuuh",
+    "siteType": "Webapp",
+    "projectLogo": "../assets/logos/vuuh-logo.png",
+    "concept": [
+      "For this 3rd-semester project, the goal was to redesign the onboarding experience for Vuuh—a Shopify app that helps retailers effortlessly discover and display products from distributors.",
+      "The main scope was to help non-technical users quickly understand the platform's value, encouraging them to convert into paying customers and integrate Vuuh into their own webshops.",
+      "The process began with diagnosing friction points in the existing onboarding experience, followed by a full redesign to improve user flow. Finally, we audited and qualified the solution's accessibility to ensure an inclusive platform for a broader user base."
+    ],
+    "technologiesUsed": ["Figma"],
+    "platform": "mobile",
+    "productImages": {
+      "mobile": [],
+      "desktop": [
+        "/vuuh-images/dashboard.png",
+        "/vuuh-images/integrations.png",
+        "/vuuh-images/brands.png",
+        "/vuuh-images/orders.png"
+      ]
+    },
+    "projectLinks": {
+      "prototype": "https://www.figma.com/proto/gyLtcPLHRLcjOeT8V9AzDI/vuuh---designfil?node-id=87-21&t=Omj9dDHw5BsFYnyo-1"
+    },
+    "contributionTags": ["UX/UI Design", "Onboarding design"],
+    "contributions": [
+      {
+        "heading": "Testing",
+        "text": "We began with a presentation of Vuuh's value proposition and Shopify app capabilities, followed by analyzing their existing user flows and visuals. To evaluate the interface, we conducted a heuristic evaluation, listing each finding to specific design principles, user friction points, and solution proposals. To maintain a sharp scope, we narrowed our focus to the 'Connect to Shopify' flow and performed a cognitive walkthrough. By breaking down every step in the process, we evaluated whether non-technical users could easily discover actions, understand their intent, execute them correctly, and receive clear feedback on their progress.",
+        "image": "/vuuh-images/testing.png"
+      },
+      {
+        "heading": "Examination",
+        "text": "We synthesized our findings to highlight the core issues: an overcomplicated 'Connect to Shopify' flow, dense Information Architecture (IA), a lack of system feedback, ambiguous terminology, and insufficient guidance for first-time users. Through this synthesis, we identified a recurring pattern: a critical lack of clarity and explanation especially for the targeted user throughout the experience. This provided us with actionable insights that opened up the design space without locking us into a single rigid solution.",
+        "image": "/vuuh-images/syntese.png"
+      },
+      {
+        "heading": "Results",
+        "text": "Once we defined our specific objectives, we began the redesign and documented it all in a [UX Audit sumary](https://drive.google.com/file/d/1tDJplhxqCv8i2DzmckC-2Ac5gvmVL7HM/view?usp=sharing). Since our target audience required clearer guidance and immediate feedback, we introduced an interactive tutorial providing a preview of the app. Additionally, we implemented a wizard that tracks progress as users complete the necessary integration steps, with a primary focus on the 'Connect to Shopify' flow. Each page now features an explanatory banner detailing the page's purpose and implementation steps. To reassure users after actions are taken, success messages provide immediate confirmation and smoothly guide them back to the dashboard and wizard.",
+        "image": "/vuuh-images/results.png"
+      },
+      {
+        "heading": "Value & Potential",
+        "text": "This redesign transforms a high-friction onboarding flow into an intuitive, guided experience for non-technical users. By streamlining the Information Architecture and introducing features like a progress-tracking wizard, introductory tutorial, and contextual banners, the solution minimizes user drop-off and eases the 'Connect to Shopify' process. As outlined in the UX Audit summary, this delivers clear business value for Vuuh by driving conversions and improving overall accessibility.",
+        "image": "/vuuh-images/changes.png"
+      }
+    ],
+    "reflections": "This project provided valuable insights into making a structure for uptimizing user flows by just testing it on myself, but still having a strong basis from heuritic theory. An example is 'help and documentation': a manual shouldn't be necessary and 'visibility of system': the user should know what's going on. Thats just naming a few, but im sure there could be more changes to make, but we chose to focus on a specific flow. Next steps could include implementing interactive dashboard tooltips or analytics tracking to monitor drop-offs and friction points.",
+    "buttonColor": "#A38CD5",
+    "buttonSummary": "Uptimizing a shopify app about product data."
   }
 ]

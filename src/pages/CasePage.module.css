@@ -187,3 +187,9 @@
 .reflectionsSection p {
   max-width: 840px;
 }
+
+.contributionContent a {
+  color: var(--black);
+  background: var(--orange);
+  text-decoration: none;
+}
