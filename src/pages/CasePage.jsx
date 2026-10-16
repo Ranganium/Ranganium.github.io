@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
 import cases from "../data/cases.json";
 import dubbleBraidPattern from "../assets/dubble-braid-pattern.svg";
 import styles from "./CasePage.module.css";
@@ -32,6 +33,12 @@ export default function CasePage() {
 
   if (!project) {
     return <h2>Project was not found!</h2>;
+  }
+
+  const links = project?.projectLinks;
+
+  if (!links || (!links.prototype && !links.website && !links.repository)) {
+    return null;
   }
 
   return (
@@ -69,18 +76,21 @@ export default function CasePage() {
         <div className={styles.projectLinksSection}>
           <h2>Explore the project</h2>
           <div className={styles.linkContainer}>
-            <a className={styles.linkBtn} href={project.projectLinks.prototype}>
-              Protoype
-            </a>
-            <a className={styles.linkBtn} href={project.projectLinks.website}>
-              Website
-            </a>
-            <a
-              className={styles.linkBtn}
-              href={project.projectLinks.repository}
-            >
-              Repository
-            </a>
+            {links.prototype && (
+              <a className={styles.linkBtn} href={links.prototype}>
+                Prototype
+              </a>
+            )}
+            {links.website && (
+              <a className={styles.linkBtn} href={links.website}>
+                Website
+              </a>
+            )}
+            {links.repository && (
+              <a className={styles.linkBtn} href={links.repository}>
+                Repository
+              </a>
+            )}
           </div>
         </div>
         <img src={dubbleBraidPattern} areal-hidden="true" />
@@ -107,18 +117,22 @@ export default function CasePage() {
                 >
                   <div className={styles.contributionText}>
                     <h3>{item.heading}</h3>
-                    <p>{item.text}</p>
+                    <p>
+                      <ReactMarkdown>{item.text}</ReactMarkdown>
+                    </p>
                   </div>
-                  <div className={styles.contributionImage}>
-                    <img
-                      src={
-                        resolveProjectImage
-                          ? resolveProjectImage(item.image)
-                          : item.image
-                      }
-                      alt={item.heading}
-                    />
-                  </div>
+                  {item?.image ? (
+                    <div className={styles.contributionImage}>
+                      <img
+                        src={
+                          resolveProjectImage
+                            ? resolveProjectImage(item.image)
+                            : item.image
+                        }
+                        alt={item.heading || ""}
+                      />
+                    </div>
+                  ) : null}
                 </div>
               );
             })}

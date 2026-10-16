@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link"; // Importér pakken
+import { HashLink } from "react-router-hash-link";
 import Logo from "../assets/logos/jk-logo.svg";
 import styles from "./Navbar.module.css";
 
