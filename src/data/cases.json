@@ -303,42 +303,41 @@
     "technologiesUsed": ["Figma"],
     "platform": "mobile",
     "productImages": {
-      "mobile": [],
-      "desktop": [
-        "/vuuh-images/dashboard.png",
-        "/vuuh-images/integrations.png",
-        "/vuuh-images/brands.png",
-        "/vuuh-images/orders.png"
-      ]
+      "mobile": [
+        "/heritage-images/front-page.png",
+        "/heritage-images/product-grid.png",
+        "/heritage-images/detail-page.png",
+        "/heritage-images/return.png"
+      ],
+      "desktop": []
     },
     "projectLinks": {
-      "prototype": "https://www.figma.com/proto/gyLtcPLHRLcjOeT8V9AzDI/vuuh---designfil?node-id=87-21&t=Omj9dDHw5BsFYnyo-1"
+      "prototype": "https://www.figma.com/proto/2bQlhqwMLnF2UnpVcmpyxg/La-Rouge-Heritage?node-id=195-203&t=OZ8OZOEdXPUg8Ioi-1"
     },
     "contributionTags": ["UX/UI Design", "Onboarding design"],
     "contributions": [
       {
         "heading": "Research",
-        "text": "We analyzed La Rōuge's initial performance data, revealing that mobile traffic accounted for 76% of visitors, while secondhand sales represented just 0.2% of revenue. Furthermore, despite over 500 La Rōuge listings existing on Vinted, only 68 products were returned through their official re commerce platform. To address this gap, we identified friction points and shifted focus toward a younger demographic (ages 16-30). We explored how to raise awareness, simplify the secondhand user experience, and effectively engage a new generation of buyers.",
-        "image": "/vuuh-images/testing.png"
+        "text": "We analyzed La Rōuge's initial performance data, revealing that mobile traffic accounted for 76% of visitors, while secondhand sales represented just 0.2% of revenue. Furthermore, 500+ La Rōuge listings existing on Vinted, only 68 products were returned through their official re commerce platform. To address this gap, we identified friction points and shifted focus toward a younger demographic (ages 16-30). We explored how to raise awareness, simplify the secondhand user experience, and effectively engage a new generation of buyers.",
+        "image": "/heritage-images/numbers.png"
       },
       {
         "heading": "Examination",
-        "text": "La Rōuge’s core expression is elegant and refined, yet its conventional styling primarily appeals to an older demographic. To engage younger audiences who seek a classic look with a modern edge, we adopted a more authentic, everyday aesthetic that reflects contemporary styling. By integrating core values like anti-consumerism and self-love, we introduced La Rōuge Héritage under a branded house architecture. This strategy allows us to target younger consumers without diluting the parent brand, positioning pre-loved garments as timeless, high-quality statements. Built around five key pillars—Aware, Inclusive, Timeless, Feminine, and Quality-conscious—the brand extension creates an honest, accessible bridge between vintage garments and a new generation of buyers.",
-        "image": "/vuuh-images/syntese.png"
+        "text": "La Rōuge's core expression is elegant and refined, yet its conventional styling primarily appeals to an older demographic. To engage younger audiences who seek a classic look with a modern edge, we adopted a more authentic, everyday aesthetic that reflects contemporary styling. By integrating core values like anti-consumerism and self-love, we introduced La Rōuge Héritage under a branded house architecture. This strategy allows us to target younger consumers without diluting the parent brand, positioning pre-loved garments as timeless, high-quality statements. Built around five key pillars—Aware, Inclusive, Timeless, Feminine, and Quality-conscious—the brand extension creates an honest, accessible bridge between vintage garments and a new generation of buyers.",
+        "image": "/heritage-images/moodboard.png"
       },
       {
         "heading": "Results",
-        "text": "",
-        "image": "/vuuh-images/results.png"
+        "text": "Héritage operates as a conceptual innovation sandbox, reimagining pre-loved fashion through authentic, hybrid styling that integrates personal wardrobes with vintage La Rōuge pieces. To protect parent-brand equity while capturing a younger demographic, we architected a distinct visual identity and launched a PR-driven Instagram and TikTok strategy. We delivered a fully interactive prototype featuring optimized e-commerce conventions inspired by modern C2C platforms—incorporating elevated product card interactions, lipstick-inspired border accents, streamlined details pages, and an intuitive, friction-free return flow.",
+        "image": "/heritage-images/results.png"
       },
       {
         "heading": "Value & Potential",
-        "text": "This redesign transforms a high-friction onboarding flow into an intuitive, guided experience for non-technical users. By streamlining the Information Architecture and introducing features like a progress-tracking wizard, introductory tutorial, and contextual banners, the solution minimizes user drop-off and eases the 'Connect to Shopify' process. As outlined in the UX Audit summary, this delivers clear business value for Vuuh by driving conversions and improving overall accessibility.",
-        "image": "/vuuh-images/changes.png"
+        "text": "The primary value of La Rōuge Héritage lies in capturing an untapped market segment and converting existing secondhand interest into direct brand equity. By addressing the massive gap between 500+ external listings on Vinted and only 68 official returns, the solution creates a friction-free C2C/re-commerce flow that retains young consumers (ages 16-30) within the brand's own ecosystem. For La Rōuge as a business, this sub-brand architecture protects parent-brand exclusivity while unlocking a sustainable revenue stream and driving mobile conversions (targeting the 76% mobile user base). For the end-user, it lowers the financial barrier to entry, offering high-quality, pre-loved garments through an authentic, modern secondhand experience."
       }
     ],
-    "reflections": "This project provided valuable insights into making a structure for uptimizing user flows by just testing it on myself, but still having a strong basis from heuritic theory. An example is 'help and documentation': a manual shouldn't be necessary and 'visibility of system': the user should know what's going on. Thats just naming a few, but im sure there could be more changes to make, but we chose to focus on a specific flow. Next steps could include implementing interactive dashboard tooltips or analytics tracking to monitor drop-offs and friction points.",
-    "buttonColor": "#4C112A",
+    "reflections": "This project showed me how much impact even subtle brand adjustments can have on the overall experience. The project concluded with a pitch day, where seeing and hearing the other teams' solutions was truly eye-opening, as it highlighted just how differently La Rōuge's challenge could be interpreted. Looking back, the pitch day made me realize several areas we could have explored further, and it taught me to stay even more open to alternative ideas early in the process. As a next step for this solution, I would take a more subtle approach: using cleaner, more standardized UI elements like basic buttons, while leveraging storytelling, color palettes, and brand identity to engage the audience. This would allow the sub-brand to feel like a seamless extension of La Rōuge's main website rather than a standalone platform.",
+    "buttonColor": "#C44937",
     "buttonSummary": "Uptimizing a shopify app about product data."
   }
 ]
