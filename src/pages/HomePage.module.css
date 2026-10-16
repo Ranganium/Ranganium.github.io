@@ -1,9 +1,11 @@
 .homepage {
   max-width: 1600px;
-  margin: 128px 0;
+  width: 100%;
+  padding-inline: clamp(1rem, 4vw, 4rem);
+  margin: clamp(6rem, 10vw, 8rem) auto;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: clamp(2rem, 5vw, 3rem);
 }
 
 .dubbleBraidPattern {
@@ -12,7 +14,8 @@
 
 .heroSection {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 4rem);
 }
 
 .heroContent,
@@ -40,16 +43,19 @@
 .heroPicture {
   height: auto;
   display: block;
+  object-fit: contain;
 }
 
 .projectsSection {
+  width: 100%;
   gap: 1.5rem;
 }
 
 .projectBtnContainer {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  width: 100%;
 }
 
 .projectBtn {
@@ -58,9 +64,9 @@
   /* Vi bruger space-between fast, så der er plads til både tekst og billede */
   justify-content: space-between;
   gap: 1rem;
-  width: 24rem;
-  min-height: 250px;
-  height: fit-content;
+  width: 100%;
+  min-width: 0;
+  height: 15.625rem;
   border: none;
   border-radius: 1rem;
   background: var(--secondary);
@@ -88,6 +94,9 @@
 .projectSumary {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  width: auto;
   gap: 0.5rem;
   text-align: left;
 
@@ -147,4 +156,41 @@
   align-items: center;
   max-width: 1000px;
   line-height: 150%;
+}
+
+@media (max-width: 800px) {
+  .heroSection {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .heroPicture {
+    width: min(100%, 42rem);
+    align-self: center;
+  }
+
+  .projectBtn {
+    height: 13rem;
+  }
+}
+
+@media (hover: none) {
+  .projectSumary {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .projectBtn img {
+    width: clamp(4rem, 18vw, 7rem);
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .projectBtn,
+  .projectBtn img,
+  .projectSumary {
+    transition: none;
+  }
 }

@@ -5,7 +5,7 @@
   align-items: center;
   width: 100%;
   max-width: 100%;
-  padding: 0.8rem;
+  padding: 0.8rem clamp(1rem, 4vw, 4rem);
   flex-wrap: wrap;
   gap: 1rem;
   z-index: 10;
@@ -22,7 +22,7 @@
 
 .links {
   display: flex;
-  gap: 4rem;
+  gap: clamp(0.75rem, 3vw, 3rem);
   width: fit-content;
   flex-wrap: wrap;
   align-items: center;
@@ -45,4 +45,18 @@
   width: fit-content;
   height: fit-content;
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    gap: 0.5rem;
+  }
+
+  .links {
+    gap: 0.5rem;
+  }
+
+  .contact {
+    padding: 0.35rem;
+  }
 }

@@ -5,15 +5,15 @@
   --body-fontfamily: Inter;
 
   /* Sizes */
-  --nav-links: 1.5rem;
-  --hero-size: 10.5rem;
-  --h1-size: 10rem;
-  --h2-size: 2.5rem;
-  --h3-size: 1.75rem;
-  --h4-size: 2rem;
-  --body-size: 1.25rem;
-  --body-small-size: 1.1rem;
-  --bigger-body-size: 1.6rem;
+  --nav-links: clamp(1rem, 1.5vw, 1.5rem);
+  --hero-size: clamp(4rem, 10vw, 10.5rem);
+  --h1-size: clamp(3.5rem, 9vw, 10rem);
+  --h2-size: clamp(1.75rem, 3vw, 2.5rem);
+  --h3-size: clamp(1.4rem, 2.2vw, 1.75rem);
+  --h4-size: clamp(1.25rem, 2vw, 2rem);
+  --body-size: clamp(1rem, 1.25vw, 1.25rem);
+  --body-small-size: clamp(0.95rem, 1.1vw, 1.1rem);
+  --bigger-body-size: clamp(1.2rem, 1.6vw, 1.6rem);
 
   /* Font weights */
   --header-font-weight: 700;
@@ -38,6 +38,12 @@
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -47,7 +53,7 @@ body {
   margin: 0;
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
@@ -62,7 +68,7 @@ body {
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow-x: clip;
   background: var(--primary);
 }
 
@@ -90,6 +96,13 @@ h1 {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --hero-size: clamp(3.5rem, 15vw, 5.5rem);
+    --h1-size: clamp(3rem, 13vw, 5rem);
+  }
 }
 h2 {
   font-size: var(--h2-size);
