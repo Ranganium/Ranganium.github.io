@@ -1,9 +1,27 @@
 .aboutPage {
-  padding-top: 8rem;
+  max-width: 1600px;
   width: 100%;
+  padding: clamp(6rem, 10vw, 8rem) clamp(1rem, 4vw, 4rem) clamp(5rem, 8vw, 10rem);
+  margin-inline: auto;
   background-color: var(--bg-2);
-  padding-bottom: 10rem;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+.aboutPage > img {
+  width: 100%;
+}
+
+.aboutPage > img:nth-of-type(2) {
+  width: min(100%, 42rem);
+  align-self: center;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.aboutPage > h1 {
+  text-align: center;
 }
 
 .aboutHero {
@@ -26,14 +44,15 @@
 
 .aboutGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
 }
 
 .aboutColumn {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  min-width: 0;
 }
 
 .aboutBio,
@@ -68,7 +87,8 @@
 .toolBoxStuff {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  flex-wrap: wrap;
 }
 
 .toolBoxStuff span {
@@ -87,9 +107,10 @@
 .aboutIcons {
   display: flex;
   padding: 0.5rem 1.5rem;
-  gap: 1.5rem;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
   border-radius: 999px;
   background-color: var(--light-beige);
+  flex-wrap: wrap;
 }
 
 .interests {
@@ -98,9 +119,9 @@
   gap: 2rem;
 }
 
-@media (max-width: 1024px) {
-  .aboutPage {
-    padding: 0 2rem;
-    gap: 3rem;
+@media (max-width: 600px) {
+  .aboutBio,
+  .aboutTestimonial {
+    padding-left: 0;
   }
 }

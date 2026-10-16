@@ -1,13 +1,15 @@
 .techBar {
   display: flex;
-  padding: 1rem 1.5rem;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  max-width: 100%;
+  padding: 1rem clamp(1rem, 2vw, 1.5rem);
+  gap: clamp(0.75rem, 2vw, 1.5rem);
   background: var(--secondary);
   border-radius: 999px;
   width: fit-content;
 }
 
 .techItem {
-  height: 3rem;
+  height: clamp(2rem, 5vw, 3rem);
   aspect-ratio: 1/1;
 }
